@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Manrope:wght@200..800&display=swap');
+
+
+:root{
+    --color-primary:#4caf4f;
+
+    .cs_w-80{
+        width: 80%!important;
+    
+    }
+
+}
+.cs_text-primary{
+    color: var(--color-primary);
+}
+
+.header{
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    padding: 20px;
+}
+
+.text_link{
+    color: white;
+}
+
+
+.navbar-brand{
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+}
+   
+    
+
+
+.navbar-nav{
+    position: relative;
+    left: 400px;
+    top: -20px;
+    font-weight: bold;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Biar responsif di layar kecil */
+}
+
+.category_item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.category_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(192, 192, 192, 0.904);
+}
+
+.p{
+    font-size: 20px;
+}
+.categories .category_item:hover{
+    background-color:#4caf4f ;
+    color: white;
+}
+
+.about-img{
+    padding-top:100px ;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.carousel slide{
+    background-color: #FCEED5;
+}
+
+.about-section {
+    background-color: #fff;
+}
+
+.about-img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:darkseagreen
+}
+
+.category-card:hover{
+    background-color: #4caf4f;
+    color: white;
+    
+}
+
+.category-card1 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:darkgray;
+}
+
+.category-card1:hover{
+    background-color:gray;
+    color: white;
+    
+}
+
+.category-card2 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:wheat;
+}
+
+.category-card2:hover{
+    background-color:yellow;
+    color: white;
+    
+}
+
+.category-card-bg{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:wheat
+}
+
+.category-card-bg:hover{
+    background-color:yellow;
+    color: white;
+    
+}
+
+.category-card-bg1{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:lightcoral
+}
+
+.category-card-bg1:hover{
+    background-color:brown;
+    color: white;
+    
+}
+
+.category-card-bg2{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:lightcoral
+}
+
+.category-card-bg2:hover{
+    background-color:brown;
+    color: white;
+    
+}
+
+.category-card-bg3{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:wheat
+}
+
+.category-card-bg3:hover{
+    background-color:yellow;
+    color: white;
+    
+}
+
+.category-card-bg-1 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:darkseagreen
+}
+
+.category-card-bg-1:hover{
+    background-color: #4caf4f;
+    color: white;
+    
+}
+
+.category-card-bg-2 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color:darkgray;
+}
+
+.category-card-bg-2:hover{
+    background-color:gray;
+    color: white;
+    
+}
+
+.icon-box {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.btn-custom {
+    background-color: #1dbf73;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #17a567;
+    color: white;
+}
+
+.h6{
+    font-size: 80px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.card-img-top {
+    height: 150px; /* Mengatur tinggi gambar agar seragam */
+    object-fit: cover;
+}
+
+.btn-success {
+    border-radius: 30px;
+}
+
+.review-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.review-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.review-section p.subtitle {
+    color: #d16650;
+    font-weight: 600;
+}
+
+
+
+
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial h6 {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.testimonial p.role {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+.image-container img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover;
+}
+
+.subscribe-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+}
+
+.subscribe-section {
+    background-color: #fdeedc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 0;
+}
+
+/* Container utama */
+.subscribe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    width: 90%;
+    gap: 20px;
+}
+
+/* Teks berada di kiri */
+.text-container {
+    max-width: 400px;
+}
+
+/* Styling untuk judul */
+.subscribe-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling untuk teks kecil */
+.sign-up {
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+/* Form berada di kanan */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+.email {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    background-color: white;
+   margin-bottom: 20px;
+
+}
+
+.btn-1 {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #4caf4f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+
+.btn-1:hover {
+    background-color: #43a047;
+}
+
+.footer {
+    background-color: white;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Container utama */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Bagian kiri untuk logo & sosial media */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Logo footer */
+.footer-logo {
+    width: 120px;
+}
+
+/* Icon sosial media */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.icons1:hover {
+    color: #4caf4f;
+}
+
+.icons2:hover {
+    color: #4caf4f;
+}
+
+.icons3:hover {
+    color: #4caf4f;
+}
+
+.icons-1:hover {
+    color: #4caf4f;
+}
+
+.icons-2:hover {
+color: #4caf4f;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.footer-column li:hover {
+    color: #4caf4f;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+   color: #333;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
