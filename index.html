@@ -1,832 +1,176 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jubilee</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header class="header">
-      Get your first course at 50% Discount. Offer lasts for the first 50
-      students only. <a href="#" class="text_link">Register now</a>
-    </header>
-    <nav class="navbar navbar-expand-lg p-2 mb-1 bg-white text-dark mx-auto" style="bottom: -20px;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="font-size: 30px; color: #4caf4f;">Jubilee</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" style="color:#4caf4f;" href="#">HOME</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle fw-bold"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                PAGES
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item fw-bold " href="#">ABOUT US</a></li>
-                <li><a class="dropdown-item fw-bold" href="#">INTRUCTORS</a></li>
-                <li>
-                  <a class="dropdown-item fw-bold" href="#">CART</a>
-                </li>
-                <li>
-                    <a class="dropdown-item fw-bold" href="#">WISHLIST</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">CEHKOUT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">PRICE PLAN</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">CONTACT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">FAQS</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">ACCOUNT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">THANKYOU</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">ERROR 404</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#">STYLES</a>
-                  </li>
-              </ul>
-            </li>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jubilee — Online Courses</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<div class="scroll-bar" id="bar"></div>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle fw-bold"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-              COURSES
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item fw-bold" href="#">COURSES</a></li>
-                <li><a class="dropdown-item fw-bold" href="#">COURSES DETAIL</a></li>
-                
-              </ul>
+<div class="promo" id="promo">Get your first course at 50% discount. Offer lasts for the first 50 students only. <a href="#subscribe">Register now</a><button id="promoClose" aria-label="Tutup">&times;</button></div>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle fw-bold"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-            EVENTS
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item fw-bold" href="#">EVENTS</a></li>
-                  <li><a class="dropdown-item fw-bold" href="#">EVENTS DETAIL</a></li>
-                 
-                </ul>
-              
-                <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle fw-bold"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                    BLOG
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item fw-bold" href="#">BLOG</a></li>
-                      <li><a class="dropdown-item fw-bold" href="#">SINGLE POST</a></li>
-                      
-                    </ul>
-
-                    <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle fw-bold"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                        SHOP
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item fw-bold" href="#"> SHOP</a></li>
-                          <li><a class="dropdown-item fw-bold" href="#">SINGLE PRODUCT</a></li>
-                          
-                        </ul>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">CONTACT</a>
-                          </li>
-
-            </li>
-            <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M16 10c0 2.21-1.79 4-4 4s-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4" />
-                    <path fill="currentColor" fill-rule="evenodd" d="M12 24c6.63 0 12-5.37 12-12S18.63 0 12 0S0 5.37 0 12s5.37 12 12 12m6.27-2.96C21.13 19.05 23 15.75 23 12c0-6.08-4.92-11-11-11S1 5.92 1 12c0 3.75 1.87 7.05 4.73 9.04C6.435 19.72 8.71 16 12 16s5.56 3.72 6.27 5.04" clip-rule="evenodd" />
-                </svg></a>
-              </li>
-    
-              <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor" fill-rule="evenodd" d="M19.285 12.645a3.8 3.8 0 0 0-5.416-5.332q-.288.288-.732.707l-.823.775l-.823-.775q-.445-.42-.733-.707a3.8 3.8 0 0 0-5.374 0c-1.468 1.469-1.485 3.844-.054 5.32l6.984 6.984l6.97-6.972zm-14.75-6.18a5 5 0 0 1 7.072 0q.273.274.707.682q.432-.408.707-.683a5 5 0 0 1 7.125 7.017l-7.125 7.126a1 1 0 0 1-1.414 0L4.48 13.48a5 5 0 0 1 .055-7.017z" />
-                </svg>
-                    </a>
-              </li>
-    
-              <li class="nav-item px-3">
-                <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
-                        <path d="M38 14H10a2 2 0 0 0-2 2v26a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V16a2 2 0 0 0-2-2" />
-                        <path d="M17 18v-7a7 7 0 1 1 14 0v7" />
-                    </g>
-                </svg></a>
-              </li>
-    
-              <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6" />
-                </svg></a>
-              </li>
-          </ul>
-          
-        </div>
-      </div>
-    </nav>
-
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active d-flex align-items-center justify-content-between p-5" style="background: linear-gradient(to right, #ffedd5, #fed7aa);">
-          <div>
-            <h1 class="" style="font-size: 60px;">MASTER <br/>YOUR SKILLS <br/>ONLINE</h1>
-            <p class="" style="font-size: 30px;">Online Courses Taught by Industry Titans!</p>
-            <div class="input-group mt-3 " style="max-width: 400px; ">
-              <input type="text" class="form-control" style="border-radius: 7px; padding: 20px;" placeholder="What are you trying to learn?" />
-              <button class="btn btn-success" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
-                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path stroke-dasharray="40" stroke-dashoffset="40" d="M10.76 13.24c-2.34 -2.34 -2.34 -6.14 0 -8.49c2.34 -2.34 6.14 -2.34 8.49 0c2.34 2.34 2.34 6.14 0 8.49c-2.34 2.34 -6.14 2.34 -8.49 0Z">
-                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="40;0" />
-                  </path>
-                  <path stroke-dasharray="12" stroke-dashoffset="12" d="M10.5 13.5l-7.5 7.5">
-                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="12;0" />
-                  </path>
-                </g>
-              </svg></button>
-            </div>
-          </div>
-          <img src="Assets-2/billboard-img.jpg" class="img-fluid " style="max-width: 450px; position: relative; top: 35px;" alt="Instructor Image">
-        </div>
-      </div>
-    </div>
-    
-
-    <section class="justify-content-center shadow-sm p-5 bg-light">
-      <div class="categories">
-        <div class="category_item">
-          <h3 class="fw-bold text-center text-danger display-1">100+</h3>
-          <p class="fw-bold text-center fs-3">INSTRUCTORS</p>
-        </div>
-        <div class="category_item">
-          <h3 class="fw-bold text-center text-danger display-1">500+</h3>
-          <p class="fw-bold text-center fs-3">COURSES</p>
-        </div>
-        <div class="category_item">
-          <h3 class="fw-bold text-center text-danger display-1">FREE</h3>
-          <p class="fw-bold text-center fs-3">CERTIFICATIONS</p>
-        </div>
-        <div class="category_item">
-          <h3 class="fw-bold text-center text-danger display-1">2,000+</h3>
-          <p class="fw-bold text-center fs-3">HAPPY MEMBERS</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Gambar Bulat -->
-          <div class="col-md-5 text-center">
-            <img src="Assets-2/about-img.jpg" class="about-img rounded-circle img-fluid" alt="About Image">
-          </div>
-          
-          <!-- Konten Teks -->
-          <div class="col-md-6">
-            <p class="text-danger" style="font-size: 15px;">Learn more about us</p>
-            <h2 class="h2" style="font-size: 40px;">About Us</h2>
-            <p class="text-muted" style="font-size: 15px;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Dolorem molestiae nam commodi dolore vitae? Numquam<br/> minima cum asperiores deleniti possimus provident, officia<br/> itaque esse eius, delectus incidunt laudantium adipisci laboriosam!
-            </p>
-            <ul class="list-unstyled">
-              <li class="d-flex align-items-start mb-2">
-                <div class="text-danger me-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <path fill="currentColor" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z"/>
-                  </svg>
-                </div> 
-                Engage with a worldwide community of inquisitive and imaginative individuals.
-              </li>
-              <li class="d-flex align-items-start mb-2">
-                <div class="text-danger me-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <path fill="currentColor" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z"/>
-                  </svg>
-                </div> 
-                Learn a skill of your choice from the experts around the world from various industries.
-              </li>
-              <li class="d-flex align-items-start">
-                <div class="text-danger me-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <path fill="currentColor" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z"/>
-                  </svg>
-                </div> 
-                Learn a skill of your choice from the experts around the world from various industries.
-              </li>
-            </ul>
-            <a href="#" class="btn  px-5 py-4 mt-5" style="border-radius: 20px; background-color: #4caf4f; color:white ;">LEARN MORE</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <!-- Header -->
-        <p class="text-danger fw-bold mt-5" style="font-size: 12px;">Pick your niche and get started</p>
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="fw-bold">Popular Categories</h2>
-            <a href="#" class="btn-custom">VIEW ALL CATEGORIES</a>
-        </div>
-    
-        <!-- Grid Layout -->
-        <div class="row g-3 mt-4"> <!-- Tambahkan mt-4 untuk memberi jarak -->
-            <!-- Graphic Design -->
-            <div class="col-md-4">
-                <div class="category-card">
-                    <div class="icon-box text-success"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 16 16">
-                      <g fill="currentColor">
-                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
-                      </g>
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">GRAPHIC DESIGN</h6>
-                        <p class=" mb-0">39 courses</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Video & Photography -->
-            <div class="col-md-4">
-                <div class="category-card1">
-                    <div class="icon-box text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 1920 1664">
-                      <path fill="currentColor" d="M960 672q119 0 203.5 84.5T1248 960t-84.5 203.5T960 1248t-203.5-84.5T672 960t84.5-203.5T960 672m704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75H256q-106 0-181-75T0 1408V512q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5T704 0h512q53 0 103.5 35.5T1389 120l51 136zM960 1408q185 0 316.5-131.5T1408 960t-131.5-316.5T960 512T643.5 643.5T512 960t131.5 316.5T960 1408" />
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">VIDEO & PHOTOGRAPHY</h6>
-                        <p class=" mb-0">39 courses</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- SEO & Marketing -->
-            <div class="col-md-4">
-                <div class="category-card2">
-                    <div class="icon-box text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512">
-                      <path fill="currentColor" fill-rule="evenodd" d="m403.966 426.944l-33.285-26.63c74.193-81.075 74.193-205.015-.001-286.09l33.285-26.628c86.612 96.712 86.61 242.635.001 339.348M319.58 155.105l-33.324 26.659c39.795 42.568 39.794 108.444.001 151.012l33.324 26.658c52.205-58.22 52.205-146.109-.001-204.329m-85.163-69.772l-110.854 87.23H42.667v170.666h81.02l110.73 85.458z" />
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">SEO & MARKETING</h6>
-                        <p class=" mb-0">24 courses</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="category-card-bg">
-                  <div class="icon-box text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512">
-                    <path fill="currentColor" fill-rule="evenodd" d="m403.966 426.944l-33.285-26.63c74.193-81.075 74.193-205.015-.001-286.09l33.285-26.628c86.612 96.712 86.61 242.635.001 339.348M319.58 155.105l-33.324 26.659c39.795 42.568 39.794 108.444.001 151.012l33.324 26.658c52.205-58.22 52.205-146.109-.001-204.329m-85.163-69.772l-110.854 87.23H42.667v170.666h81.02l110.73 85.458z" />
-                  </svg></div>
-                  <div>
-                      <h6 class="fw-bold mb-0">SEO & MARKETING</h6>
-                      <p class=" mb-0">24 courses</p>
-                  </div>
-              </div>
-          </div>
-    
-            <!-- Computer Science -->
-            <div class="col-md-4">
-                <div class="category-card-bg1">
-                    <div class="icon-box text-danger"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
-                      <path fill="currentColor" d="M20 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6v2H7v2h10v-2h-3v-2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m0 14H4V4h16z" />
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">COMPUTER SCIENCE</h6>
-                        <p class=" mb-0">16 courses</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Business & Finance -->
-            <div class="col-md-4">
-                <div class="category-card-bg2">
-                    <div class="icon-box text-danger"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
-                      <path fill="currentColor" d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74c.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1c1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6" />
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">BUSINESS & FINANCE</h6>
-                        <p class=" mb-0">16 courses</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Health & Fitness -->
-            <div class="col-md-4">
-                <div class="category-card-bg3">
-                    <div class="icon-box text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
-                      <path fill="currentColor" d="M7.05 8.45L4.2 11.3q-.275.275-.687.288T2.8 11.3q-.275-.275-.287-.687t.262-.713l.725-.75l-.7-.7q-.3-.3-.3-.7t.3-.7l1.4-1.4l-.725-.75Q3.2 4.625 3.2 4.213t.3-.713q.275-.275.688-.287t.712.262l.75.725l1.4-1.4q.3-.3.7-.3t.7.3l.7.7l.75-.725q.275-.275.688-.275t.712.3q.275.275.275.7t-.275.7L8.45 7.05l8.5 8.5l2.85-2.85q.275-.275.688-.287t.712.287q.275.275.288.688t-.263.712l-.725.75l.7.7q.3.3.3.7t-.3.7l-1.4 1.4l.725.75q.275.275.275.687t-.3.713q-.275.275-.687.288t-.713-.263l-.75-.725l-1.4 1.4q-.3.3-.7.3t-.7-.3l-.7-.7l-.75.725q-.275.275-.687.275t-.713-.3q-.275-.275-.275-.7t.275-.7l2.85-2.85z" />
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">HEALTH & FITNESS</h6>
-                        <p class=" mb-0">24 courses</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Graphic Design -->
-            <div class="col-md-4">
-                <div class="category-card-bg-1">
-                    <div class="icon-box text-success"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 16 16">
-                      <g fill="currentColor">
-                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
-                      </g>
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">GRAPHIC DESIGN</h6>
-                        <p class=" mb-0">39 courses</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Graphic Design -->
-            <div class="col-md-4">
-                <div class="category-card-bg-2">
-                    <div class="icon-box text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 16 16">
-                      <g fill="currentColor">
-                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
-                      </g>
-                    </svg></div>
-                    <div>
-                        <h6 class="fw-bold mb-0">GRAPHIC DESIGN</h6>
-                        <p class=" mb-0">39 courses</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section class="text">
-      <p class="text-center" style="font-size: 20px; color: brown;">Some of our most popular online courses</p>
-      <h2 class="text-center" style="font-size: 35px;">Explore Inspiring Online Courses</h2>
-  
-      <div class="container mt-4">
-          <div class="row g-3">
-              <!-- Card 1 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <header class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2">⏱ 1H 50M</span></header>
-                          <h6 class="fw-bold mt-2 fs-4">Mastering The Art Of Digital Communication</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam <span  class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Card 2 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item2.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <header class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2">⏱ 1H 50M</span></header>
-                          <h6 class="fw-bold mt-2 fs-4">Web Wizardry 101: Mastering The Internet</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam  <span class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Card 3 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item3.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <header class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2">⏱ 1H 50M</span></header>
-                          <h6 class="fw-bold mt-2 fs-4">E-Learning Essentials: A Comprehensive Guide</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam <span  class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Card 4 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item4.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <header class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2">⏱ 1H 50M</span></header>
-                          <h6 class="fw-bold mt-2 fs-4">CyberClass 101: A Guide To Online Education</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam <span  class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Card 5 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item5.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <header class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2">⏱ 1H 50M</span></header>
-                          <h6 class="fw-bold mt-2 fs-4">Mastering The Art Of Digital Communication</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam <span  class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Card 6 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item7.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <header class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2 text-end">⏱ 1H 50M</span></header>
-                          <h6 class="fw-bold mt-2 fs-4">E-Learning Essentials: A Comprehensive Guide</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam <span class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Card 7 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item8.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <header class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2 tex-end">⏱ 1H 50M</span></header>
-                          <h6 class="fw-bold mt-2 fs-4">E-Learning Essentials: A Comprehensive Guide</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam <span  class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Card 8 -->
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="card shadow-sm">
-                      <img src="Assets-2/item6.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <small class="text-muted d-block fw-bold " style="font-size: 15px;">DIGITAL MARKETING <span class="ms-2 text-end">⏱ 1H 50M</span></small>
-                          <h6 class="fw-bold mt-2 fs-4">E-Learning Essentials: A Comprehensive Guide</h6>
-                          <p class="text-muted fw-bold" style="font-size: 15px;">By: James Willam <span  class=" fs-4 " style="color: #4caf4f;">★★★★★</span></p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <!-- Button -->
-          <div class="text-center mt-4 mb-5">
-              <a href="#" class="btn btn-success px-4 py-2 fw-bold">VIEW ALL COURSES</a>
-          </div>
-      </div>
-  </section>
-
-
-
-  
-  <section class="review-section  " style="background-color:#eaf7f5 ; padding-top: 20px;">
-    <p class="subtitle">What our students say about us</p>
-    <h2>Reviews</h2>
-
-    <div id="reviewCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4">
-                            <div class="testimonial">
-                                <p class="text-start">"Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at ut in sit libero, sed.
-                                  Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem nunc sapien egestas at cursus."</p>
-                                  <img src="Assets-2/reviwer1.jpg" alt="Recco Gracia">
-                                <h6 >Recco Gracia</h6>
-                                <p class="role">Web Developer</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="testimonial">
-                                <p class="text-start">"Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at ut in sit libero, sed.
-                                  Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem nunc sapien egestas at cursus."</p>
-                                <img src="Assets-2/reviwer2.jpg" alt="Bicky Yeal">
-                                <h6>Bicky Yeal</h6>
-                                <p class="role">Web Developer</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="testimonial">
-                                <p class="text-start">"Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at ut in sit libero, sed.
-                                  Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem nunc sapien egestas at cursus."</p>
-                                  <img src="Assets-2/reviwer3.jpg" alt="Lilly Will">
-                                <h6>Lilly Will</h6>
-                                <p class="role">Web Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-    </div>
-</section>
-
-<section class="teacher-section" style="background-color: white; padding: 20px 0;">
-  <p class="text-center" style="font-size: 20px; color: brown;">Meet our popular teachers</p>
-  <h2 class="text-center" style="font-size: 35px;">Our Teachers</h2>
-  
-  <div class="container mt-4">
-      <div class="row g-3 justify-content-center">
-          
-          <!-- Teacher 1 -->
-          <div class="col-lg-2 col-md-6">
-              <div class="card shadow-sm position-relative">
-                  <div class="image-container">
-                      <img src="Assets-2/teacher1.jpg" class="card-img-top" alt="Anila Lee">
-                  </div>
-                  <div class="card-body text-center">
-                      <header class="fw-bold">Anila Lee</header>
-                      <h6 class="text-danger">Art Director</h6>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Teacher 2 -->
-          <div class="col-lg-2 col-md-6">
-              <div class="card shadow-sm position-relative">
-                  <div class="image-container">
-                      <img src="Assets-2/teacher2.jpg" class="card-img-top" alt="Bruce Smith">
-                  </div>
-                  <div class="card-body text-center">
-                      <header class="fw-bold">Bruce Smith</header>
-                      <h6 class="text-danger">Marketing Expert</h6>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Teacher 3 -->
-          <div class="col-lg-2 col-md-6">
-              <div class="card shadow-sm position-relative">
-                  <div class="image-container">
-                      <img src="Assets-2/teacher3.jpg" class="card-img-top" alt="Jack Nicholson">
-                  </div>
-                  <div class="card-body text-center">
-                      <header class="fw-bold">Jack Nicholson</header>
-                      <h6 class="text-danger">SEO Expert</h6>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Teacher 4 -->
-          <div class="col-lg-2 col-md-6 ">
-              <div class="card shadow-sm position-relative">
-                  <div class="image-container">
-                      <img src="Assets-2/teacher4.jpg" class="card-img-top" alt="Calvin Ian" >
-                  </div>
-                  <div class="card-body text-center">
-                      <header class="fw-bold">Calvin Ian</header>
-                      <h6 class="text-danger">Sales Director</h6>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Teacher 5 -->
-          <div class="col-lg-2 col-md-6">
-              <div class="card shadow-sm position-relative">
-                  <div class="image-container">
-                      <img src="Assets-2/teacher5.jpg" class="card-img-top" alt="Milye Sam">
-                  </div>
-                  <div class="card-body text-center">
-                      <header class="fw-bold">Milye Sam</header>
-                      <h6 class="text-danger">Marketing Expert</h6>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-  </div>
-</section>
-
-<section class="teacher-section mb-5" style="background-color: white; padding: 50px 0; ">
-  <p class="text-center" style="font-size: 18px; color: #ff6b6b;">What features we provide</p>
-  <h2 class="text-center" style="font-size: 35px; font-weight: bold; color: #333;">Core Features</h2>
-
+<nav class="navbar navbar-expand-xl sticky-top site-nav" id="nav">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <ul style="list-style: none; padding: 40px;">
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;">
-            <span style="margin-right: 10px; margin-top: -30px; "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Engage with a worldwide community of inquisitive and imaginative individuals.
-          </li>
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;" class="display-6">
-            <span style="margin-right: 10px; margin-top: -30px; "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Engage with a worldwide community of inquisitive and imaginative individuals.
-          </li>
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;" class="display-6">
-            <span style="margin-right: 10px; margin-top: -30px; "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Learn a skill of your choice from the experts around the world from various industries.
-          </li>
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;" class="display-6">
-            <span style="margin-right: 10px; margin-top: -30px; "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Learn a skill of your choice from the experts around the world from various industries.
-          </li>
-        </ul>
+    <a class="navbar-brand" href="#top">Jubilee</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="#about">About Us</a></li><li><a class="dropdown-item" href="#teachers">Instructors</a></li><li><a class="dropdown-item" href="#">Cart</a></li><li><a class="dropdown-item" href="#">Wishlist</a></li><li><a class="dropdown-item" href="#">Checkout</a></li><li><a class="dropdown-item" href="#">Price Plan</a></li><li><a class="dropdown-item" href="#">FAQs</a></li><li><a class="dropdown-item" href="#">Account</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#courses" data-bs-toggle="dropdown">Courses</a>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="#courses">Courses</a></li><li><a class="dropdown-item" href="#">Course Detail</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Events</a></li><li><a class="dropdown-item" href="#">Event Detail</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Blog</a></li><li><a class="dropdown-item" href="#">Single Post</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Shop</a></li><li><a class="dropdown-item" href="#">Single Product</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+      </ul>
+      <div class="nav-icons"><a href="#" aria-label="Akun">👤</a><a href="#" aria-label="Wishlist">♡</a><a href="#" aria-label="Keranjang">🛒<i class="badge-dot">2</i></a></div>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="pill">Online learning platform</span>
+        <h1>Master your skills <span id="typed"></span><span class="caret">|</span></h1>
+        <p class="lead">Online courses taught by industry titans. Pelajari skill baru dari para ahli, kapan saja.</p>
+        <div class="search"><input type="text" id="q" placeholder="What are you trying to learn?" aria-label="Cari kursus"><button type="button" id="qBtn">Search</button></div>
+        <div class="tags"><span>Design</span><span>Marketing</span><span>SEO</span><span>Photography</span></div>
       </div>
-      <div class="col-md-6">
-        <ul style="list-style: none; padding: 40px;">
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;" class="display-6">
-            <span style="margin-right: 10px; margin-top: -30px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Engage with a worldwide community of inquisitive and imaginative individuals.
-          </li>
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;" class="display-6">
-            <span style="margin-right: 10px; margin-top: -30px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Engage with a worldwide community of inquisitive and imaginative individuals.
-          </li>
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;" class="display-6">
-            <span style="margin-right: 10px; margin-top: -30px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Learn a skill of your choice from the experts around the world from various industries.
-          </li>
-          <li style="display: flex; align-items: center; margin-bottom: 15px; font-size: 20px;" class="display-6">
-            <span style="margin-right: 10px; margin-top: -30px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path fill="#de0e0e" d="M10 2c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8m-.615 12.66h-1.34l-3.24-4.54l1.341-1.25l2.569 2.4l5.141-5.931l1.34.94z" />
-            </svg></span>
-            Learn a skill of your choice from the experts around the world from various industries.
-          </li>
-        </ul>
+      <div class="col-lg-6">
+        <div class="hero-visual" id="heroVis">
+          <img src="Assets-2/billboard-img.jpg" alt="Instructor" class="hero-img">
+          <div class="float f1"><b>2,000+</b><small>Happy members</small></div>
+          <div class="float f2"><b>★ 4.9</b><small>Student rating</small></div>
+        </div>
       </div>
+    </div>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="container"><div class="row g-4 text-center">
+    <div class="col-6 col-lg-3 reveal"><div class="stat"><b data-count="100" data-suffix="+">0</b><span>Instructors</span></div></div>
+    <div class="col-6 col-lg-3 reveal"><div class="stat"><b data-count="500" data-suffix="+">0</b><span>Courses</span></div></div>
+    <div class="col-6 col-lg-3 reveal"><div class="stat"><b>FREE</b><span>Certifications</span></div></div>
+    <div class="col-6 col-lg-3 reveal"><div class="stat"><b data-count="2000" data-suffix="+">0</b><span>Happy members</span></div></div>
+  </div></div>
+</section>
+
+<section id="about" class="section">
+  <div class="container"><div class="row align-items-center g-5">
+    <div class="col-md-5 reveal"><div class="about-wrap"><img src="Assets-2/about-img.jpg" alt="About" class="about-img"><div class="ring"></div></div></div>
+    <div class="col-md-7 reveal">
+      <p class="eyebrow">Learn more about us</p>
+      <h2 class="title">About Us</h2>
+      <p class="muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae nam commodi dolore vitae? Numquam minima cum asperiores deleniti possimus provident, officia itaque esse eius, delectus incidunt laudantium adipisci laboriosam!</p>
+      <ul class="ticks"><li>Engage with a worldwide community of inquisitive and imaginative individuals.</li><li>Learn a skill of your choice from the experts around the world from various industries.</li><li>Get certified for free after finishing every course.</li></ul>
+      <a href="#courses" class="btn-main magnetic">Learn more</a>
+    </div>
+  </div></div>
+</section>
+
+<section id="categories" class="section alt">
+  <div class="container">
+    <p class="eyebrow">Pick your niche and get started</p>
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4"><h2 class="title m-0">Popular Categories</h2><a href="#courses" class="btn-line">View all categories</a></div>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4 reveal"><a href="#courses" class="cat" style="--c:#4caf4f"><i>🎨</i><div><h6>Graphic Design</h6><small>39 courses</small></div></a></div>
+      <div class="col-md-6 col-lg-4 reveal"><a href="#courses" class="cat" style="--c:#6c63ff"><i>📷</i><div><h6>Video &amp; Photography</h6><small>39 courses</small></div></a></div>
+      <div class="col-md-6 col-lg-4 reveal"><a href="#courses" class="cat" style="--c:#f59e0b"><i>📣</i><div><h6>SEO &amp; Marketing</h6><small>24 courses</small></div></a></div>
+      <div class="col-md-6 col-lg-4 reveal"><a href="#courses" class="cat" style="--c:#ef4444"><i>💻</i><div><h6>Computer Science</h6><small>16 courses</small></div></a></div>
+      <div class="col-md-6 col-lg-4 reveal"><a href="#courses" class="cat" style="--c:#0ea5e9"><i>💼</i><div><h6>Business &amp; Finance</h6><small>16 courses</small></div></a></div>
+      <div class="col-md-6 col-lg-4 reveal"><a href="#courses" class="cat" style="--c:#ec4899"><i>🏋️</i><div><h6>Health &amp; Fitness</h6><small>24 courses</small></div></a></div>
     </div>
   </div>
 </section>
 
-<section class="subscribe-section">
-  <div class="subscribe-container">
-    <div class="text-container">
-      <h2 class="subscribe-title">Subscribe and get <br> 20% OFF on your first <br> online course</h2>
-      <p class="sign-up">Sign Up for our newsletter and never miss any offers</p>
+<section id="courses" class="section">
+  <div class="container">
+    <div class="text-center mb-4 reveal"><p class="eyebrow">Some of our most popular online courses</p><h2 class="title">Explore Inspiring Online Courses</h2></div>
+    <div class="chips reveal"><button class="chip active" data-f="all">All</button><button class="chip" data-f="marketing">Marketing</button><button class="chip" data-f="design">Design</button><button class="chip" data-f="tech">Tech</button></div>
+    <div class="row g-4" id="courseGrid">
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="marketing"><article class="course tilt"><img src="Assets-2/item1.jpg" alt=""><div class="cbody"><small>DIGITAL MARKETING · ⏱ 1h 50m</small><h6>Mastering The Art Of Digital Communication</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="tech"><article class="course tilt"><img src="Assets-2/item2.jpg" alt=""><div class="cbody"><small>WEB · ⏱ 1h 50m</small><h6>Web Wizardry 101: Mastering The Internet</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="design"><article class="course tilt"><img src="Assets-2/item3.jpg" alt=""><div class="cbody"><small>DESIGN · ⏱ 1h 50m</small><h6>E-Learning Essentials: A Comprehensive Guide</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="tech"><article class="course tilt"><img src="Assets-2/item4.jpg" alt=""><div class="cbody"><small>TECH · ⏱ 1h 50m</small><h6>CyberClass 101: A Guide To Online Education</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="marketing"><article class="course tilt"><img src="Assets-2/item5.jpg" alt=""><div class="cbody"><small>DIGITAL MARKETING · ⏱ 1h 50m</small><h6>Mastering The Art Of Digital Communication</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="design"><article class="course tilt"><img src="Assets-2/item7.jpg" alt=""><div class="cbody"><small>DESIGN · ⏱ 1h 50m</small><h6>E-Learning Essentials: A Comprehensive Guide</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="marketing"><article class="course tilt"><img src="Assets-2/item8.jpg" alt=""><div class="cbody"><small>DIGITAL MARKETING · ⏱ 1h 50m</small><h6>E-Learning Essentials: A Comprehensive Guide</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
+      <div class="col-sm-6 col-lg-3 course-col" data-cat="tech"><article class="course tilt"><img src="Assets-2/item6.jpg" alt=""><div class="cbody"><small>TECH · ⏱ 1h 50m</small><h6>E-Learning Essentials: A Comprehensive Guide</h6><p>By James Willam <span>★★★★★</span></p></div></article></div>
     </div>
+    <div class="text-center mt-5"><a href="#" class="btn-main magnetic">View all courses</a></div>
+  </div>
+</section>
 
-    <div class="btn-container">
-      <input type="email" placeholder="Write Your Email Address*" class="email">
-      <button class="btn-1">GET STARTED NOW</button>
+<section class="section reviews">
+  <div class="container">
+    <div class="text-center mb-5 reveal"><p class="eyebrow">What our students say about us</p><h2 class="title">Reviews</h2></div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal"><div class="quote"><span class="qm">“</span><p>Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem.</p><div class="who"><img src="Assets-2/reviwer1.jpg" alt="Recco Gracia"><div><h6>Recco Gracia</h6><small>Web Developer</small></div></div></div></div>
+      <div class="col-md-4 reveal"><div class="quote"><span class="qm">“</span><p>Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem.</p><div class="who"><img src="Assets-2/reviwer2.jpg" alt="Bicky Yeal"><div><h6>Bicky Yeal</h6><small>Web Developer</small></div></div></div></div>
+      <div class="col-md-4 reveal"><div class="quote"><span class="qm">“</span><p>Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem.</p><div class="who"><img src="Assets-2/reviwer3.jpg" alt="Lilly Will"><div><h6>Lilly Will</h6><small>Web Developer</small></div></div></div></div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-left">
-      <img src="Assets-2/logo.png" alt="Logo" class="footer-logo">
-      <div class="social-icons">
-        <span class="icons1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
-        </svg>
-      </span>
-
-      <span class="icons-2"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-        <g fill="none">
-          <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-          <path fill="currentColor" d="M4.594 4.984a1 1 0 0 1 .941.429C7.011 7.572 8.783 8.47 10.75 8.674c.096-.841.323-1.672.75-2.404c.626-1.074 1.644-1.864 3.098-2.156c2.01-.404 3.54.324 4.427 1.215l1.792-.335a1 1 0 0 1 1.053 1.478l-1.72 3.022c.157 4.361-1.055 7.405-3.639 9.502c-1.37 1.112-3.332 1.743-5.485 1.938c-2.17.196-4.623-.041-7.061-.753a1 1 0 0 1 .007-1.922c1.226-.349 2.16-.65 3.003-1.177c-1.199-.636-2.082-1.468-2.707-2.416c-.868-1.318-1.19-2.788-1.254-4.113S3.141 8 3.343 7.115c.115-.505.249-1.011.434-1.495a1 1 0 0 1 .818-.636Z" />
-        </g>
-      </svg></span>
-
-        <span class="icons2"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
-        </svg>
-      </span>
-
-        <span class="icons3"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-          <g fill="none" fill-rule="evenodd">
-            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-            <path fill="currentColor" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zM8 10a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0v-5a1 1 0 0 0-1-1m3-1a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.66c.305-.344.82-.748 1.393-.993c.333-.142.834-.2 1.182-.09a.55.55 0 0 1 .293.188c.052.07.132.226.132.555v4a1 1 0 0 0 2 0v-4c0-.67-.17-1.266-.524-1.744a2.54 2.54 0 0 0-1.301-.907c-.902-.283-1.901-.126-2.568.16a6 6 0 0 0-.623.312A1 1 0 0 0 11 9M8 7a1 1 0 1 0 0 2a1 1 0 0 0 0-2" />
-          </g>
-        </svg>
-      </span>
-
-        <span class="icons-1"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-          <g fill="none" fill-rule="evenodd">
-            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-            <path fill="currentColor" d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z" />
-          </g>
-        </svg>
-      </span>
-        
-      </div>
-    </div>
-
-    <div class="footer-links">
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Courses</li>
-          <li>Blogs</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>About</h3>
-        <ul>
-          <li>How It Works</li>
-          <li>Pricing</li>
-          <li>Promotion</li>
-          <li>Affiliation</li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Help Center</h3>
-        <ul>
-          <li>Payments</li>
-          <li>FAQs</li>
-          <li>Checkout</li>
-          <li>Other</li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Contact Us</h3>
-        <ul>
-          <li>contact@yourcompany</li>
-          <li>+110 4587 2445</li>
-          <li>New York, USA</li>
-        </ul>
-      </div>
+<section id="teachers" class="section">
+  <div class="container">
+    <div class="text-center mb-5 reveal"><p class="eyebrow">Meet our popular teachers</p><h2 class="title">Our Teachers</h2></div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-4 col-lg reveal"><div class="teacher"><div class="ph"><img src="Assets-2/teacher1.jpg" alt="Anila Lee"></div><h6>Anila Lee</h6><small>Art Director</small></div></div>
+      <div class="col-6 col-md-4 col-lg reveal"><div class="teacher"><div class="ph"><img src="Assets-2/teacher2.jpg" alt="Bruce Smith"></div><h6>Bruce Smith</h6><small>Marketing Expert</small></div></div>
+      <div class="col-6 col-md-4 col-lg reveal"><div class="teacher"><div class="ph"><img src="Assets-2/teacher3.jpg" alt="Jack Nicholson"></div><h6>Jack Nicholson</h6><small>SEO Expert</small></div></div>
+      <div class="col-6 col-md-4 col-lg reveal"><div class="teacher"><div class="ph"><img src="Assets-2/teacher4.jpg" alt="Calvin Ian"></div><h6>Calvin Ian</h6><small>Sales Director</small></div></div>
+      <div class="col-6 col-md-4 col-lg reveal"><div class="teacher"><div class="ph"><img src="Assets-2/teacher5.jpg" alt="Milye Sam"></div><h6>Milye Sam</h6><small>Marketing Expert</small></div></div>
     </div>
   </div>
+</section>
 
-  <div class="footer-bottom">
-    
-    <p>© 2024 TemplatesJungle. All rights reserved.</p>
-    <p>Free HTML Template by: <strong>TemplatesJungle</strong> Distributed by: <strong>ThemeWagon</strong></p>
- 
+<section class="section alt">
+  <div class="container">
+    <div class="text-center mb-5 reveal"><p class="eyebrow">What features we provide</p><h2 class="title">Core Features</h2></div>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-3 reveal"><div class="feat"><i>🌍</i><p>Engage with a worldwide community of inquisitive and imaginative individuals.</p></div></div>
+      <div class="col-md-6 col-lg-3 reveal"><div class="feat"><i>🎓</i><p>Learn a skill of your choice from experts around the world from various industries.</p></div></div>
+      <div class="col-md-6 col-lg-3 reveal"><div class="feat"><i>📜</i><p>Earn free certifications you can share on your profile.</p></div></div>
+      <div class="col-md-6 col-lg-3 reveal"><div class="feat"><i>📱</i><p>Study anywhere, on any device, at your own pace.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="subscribe" class="sub">
+  <div class="container reveal"><div class="sub-box">
+    <div><h2>Subscribe and get 20% OFF on your first online course</h2><p>Sign up for our newsletter and never miss any offers</p></div>
+    <form id="subForm"><input type="email" placeholder="Write your email address*" required aria-label="Email"><button class="btn-main" type="submit">Get started now</button><small id="subMsg"></small></form>
+  </div></div>
+</section>
+
+<footer id="footer" class="foot">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4"><a class="navbar-brand" href="#top">Jubilee</a><p class="mt-3">Belajar skill baru dari para ahli, di mana saja.</p><div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Twitter">t</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a></div></div>
+      <div class="col-6 col-lg-2"><h6>Quick Links</h6><ul><li><a href="#top">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#courses">Courses</a></li><li><a href="#">Blogs</a></li><li><a href="#footer">Contact</a></li></ul></div>
+      <div class="col-6 col-lg-2"><h6>About</h6><ul><li><a href="#">How It Works</a></li><li><a href="#">Pricing</a></li><li><a href="#">Promotion</a></li><li><a href="#">Affiliation</a></li></ul></div>
+      <div class="col-6 col-lg-2"><h6>Help Center</h6><ul><li><a href="#">Payments</a></li><li><a href="#">FAQs</a></li><li><a href="#">Checkout</a></li><li><a href="#">Other</a></li></ul></div>
+      <div class="col-6 col-lg-2"><h6>Contact Us</h6><ul><li>contact@yourcompany</li><li>+110 4587 2445</li><li>New York, USA</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2024 TemplatesJungle. All rights reserved.</span><span>Free HTML Template by TemplatesJungle · Distributed by ThemeWagon</span></div>
   </div>
 </footer>
-
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
 </html>
